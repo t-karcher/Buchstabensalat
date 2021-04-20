@@ -27,7 +27,7 @@ func _ready():
 		for y in range (10):
 			var l = Label.new()
 			l.rect_position = Vector2(50 + x * 20, 50 + y * 20)
-			# letters[x][y] = char(65 + randi() % 26) 
+			# matrix[x][y] = char(65 + randi() % 26) 
 			matrix[x][y] = not_so_random_letters[x + y * 10] 
 			l.text = matrix[x][y]
 			add_child(l)
